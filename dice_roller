@@ -1,0 +1,10 @@
+# dice_roller.py
+
+import random
+
+def roll_dice(num_dice, num_sides):
+    rolls = [random.randint(1, num_sides) for _ in range(num_dice)]
+    return rolls
+
+# Sample usage
+print(roll_dice(2, 6))  # Rolls two 6-sided dice
